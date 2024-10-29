@@ -1,0 +1,66 @@
+.comic-cover {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.comic-cover img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.comic-cover img:hover {
+  transform: scale(1.05);
+}
+
+.storytelling-img {
+  display: block;
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+.storytelling-container {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.storytelling-text {
+  max-width: 500px;
+  margin-left: 20px;
+}
+
+.protagonist-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.protagonist-img {
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.supporting-cast {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.supporting-img {
+  max-width: 150px;
+  border-radius: 8px;
+  margin: 0 10px;
+}
+
+.planning-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
