@@ -2,51 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<>, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 20px;
-        background-color: #f4f4f4;
-    }
-    h1 {
-        text-align: center;
-        color: #333;
-    }
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    li {
-        margin: 10px 0;
-    }
-    a {
-        text-decoration: none;
-        color: #007BFF;
-        font-size: 18px;
-    }
-
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toby Jiang's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        img {
+            max-width: 150px;
+            border-radius: 50%;
+            border: 3px solid #007BFF;
+        }
+        nav {
+            background-color: #007BFF;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #ccc;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
-   
-<h1>Toby Jiang</h1>
-</body>
-<hr>
-<img src="Screenshot 2024-10-17 133147.png" alt=""Me">
-</hr>
-<p>Welcome to my portfolio! Here are some links to my work:</p>
-<hr>
-<ul>
-    <li><a href="https://tobyjiang559.github.io/TobyJiang559/lab1.html" target="">Aurora Boralis</a></li>
-    <li><a href="https://tobyjiang559.github.io/TobyJiang559/index.html" target="">Home</a></li>
-    <li><a href="https://tobyjiang559.github.io/TobyJiang559/project1.html" target="">Danzel's bakery</a></li>
-    <li><a href="https://tobyjiang559.github.io/TobyJiang559/practice.html" target="">practice</a></li>
-    <li><a href="project3/project3.html">project3</a></li>
-</ul>
-</hr
+
+<header>
+    <h1>Toby Jiang</h1>
+    <img src="Screenshot 2024-10-17 133147.png" alt="Toby Jiang">
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <hr>
+    <p style="text-align: center;">Welcome to my portfolio! Here are some links to my work:</p>
+    <hr>
+
+    <ul>
+        <li><a href="https://tobyjiang559.github.io/TobyJiang559/lab1.html" target="_blank">Aurora Boralis</a></li>
+        <li><a href="https://tobyjiang559.github.io/TobyJiang559/index.html" target="_blank">Home</a></li>
+        <li><a href="https://tobyjiang559.github.io/TobyJiang559/project1.html" target="_blank">Danzel's Bakery</a></li>
+        <li><a href="https://tobyjiang559.github.io/TobyJiang559/practice.html" target="_blank">Practice</a></li>
+        <li><a href="project3/project3.html" target="_blank">Project 3</a></li>
+    </ul>
+</div>
+
+<footer>
+    <p>&copy; 2024 Toby Jiang. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
