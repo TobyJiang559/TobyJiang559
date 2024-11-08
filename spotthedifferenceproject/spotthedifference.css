@@ -74,23 +74,41 @@ body, html {
 
 /* Image styling */
 .images {
+    position: relative;
+    width: 80%; /* Adjust width to fit your design */
+    max-width: 400px; /* Constrain image container max-width */
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .game-image {
-    width: 45%; /* Adjust the size as needed */
+    width: 100%; /* Adjust the size as needed */
     border: 2px solid #ccc;
     border-radius: 8px;
 }
 
-/* Animation for hiding the before image */
-.before-image {
-    transition: opacity 5s ease-in-out;
+/* Initially hide the after-image */
+.after-image {
+    opacity: 0;
+    position: absolute; /* Stack the after image on top of the before image */
+    top: 0;
+    left: 0;
+    transition: opacity 1s ease-in-out;
 }
 
-.before-image:hover {
-    opacity: 0;
-    pointer-events: none; /* Prevent further hover interactions once hidden */
+/* Animation to fade in the after-image */
+@keyframes fadeInAfterImage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply the animation on hover after a 5-second delay */
+.before-image:hover + .after-image {
+    animation: fadeInAfterImage 1s ease-in-out 5s forwards;
 }
