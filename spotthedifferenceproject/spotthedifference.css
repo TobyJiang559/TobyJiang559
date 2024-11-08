@@ -8,98 +8,93 @@
 body, html {
     height: 100%;
     font-family: Arial, sans-serif;
-}
-
-/* Background styling */
-.background {
-    background-image: url('background.png'); /* Replace with your background PNG */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background-color: #1c1c1c; /* Dark theme for "Ghost School" */
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 20px;
 }
 
-/* Header box styling */
-.header-box {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-    padding: 20px;
-    border-radius: 8px;
+/* Main banner styling */
+.banner {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.header-box h1 {
-    color: #333;
+.banner h1 {
     font-size: 2.5em;
-    font-weight: bold;
+    color: #f0e68c; /* Ghostly gold */
 }
 
-/* Game section styling */
-.game-section {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 8px;
-    width: 80%;
-    max-width: 800px;
-    text-align: center;
+.banner h2 {
+    font-size: 1.5em;
+    color: #dcdcdc;
 }
 
-.game-section h2 {
-    color: #444;
-    font-size: 2em;
-    margin-bottom: 20px;
+.instructions {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #cccccc;
 }
 
+/* Game levels styling */
+.game-levels {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Level styling */
 .level {
-    margin: 20px 0;
-    padding: 10px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
+    background-color: #333333; /* Dark container for each level */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
 .level h3 {
-    font-size: 1.5em;
-    color: #555;
+    font-size: 1.8em;
+    color: #e0e0e0;
     margin-bottom: 10px;
 }
 
 .level p {
-    color: #666;
     font-size: 1em;
+    color: #a9a9a9;
+    margin-bottom: 20px;
 }
 
-/* Image styling */
+/* Images styling */
 .images {
     position: relative;
-    width: 80%; /* Adjust width to fit your design */
-    max-width: 400px; /* Constrain image container max-width */
+    width: 80%;
+    max-width: 600px;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .game-image {
-    width: 100%; /* Adjust the size as needed */
-    border: 2px solid #ccc;
+    width: 100%;
+    border: 3px solid #666666;
     border-radius: 8px;
+    transition: opacity 0.5s ease;
 }
 
-/* Initially hide the after-image */
+/* Hide the after-image initially */
 .after-image {
     opacity: 0;
-    position: absolute; /* Stack the after image on top of the before image */
+    position: absolute;
     top: 0;
     left: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 0.5s ease;
 }
 
-/* Animation to fade in the after-image */
-@keyframes fadeInAfterImage {
+/* Keyframe animation for hover effect */
+@keyframes fadeIn {
     from {
         opacity: 0;
     }
@@ -108,7 +103,12 @@ body, html {
     }
 }
 
-/* Apply the animation on hover after a 5-second delay */
+/* Delay the reveal effect for the after-image */
 .before-image:hover + .after-image {
-    animation: fadeInAfterImage 1s ease-in-out 5s forwards;
+    animation: fadeIn 1s ease forwards;
+    opacity: 1;
+}
+
+.before-image:hover {
+    opacity: 0; /* Hide the "before" image on hover */
 }
