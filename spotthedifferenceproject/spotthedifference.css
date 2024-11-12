@@ -54,17 +54,6 @@ p {
   font-size: 0.9em;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: height 0.5s ease, box-shadow 0.5s ease;
-  overflow: hidden;
-}
-
-#instructions:hover {
-  height: auto;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-}
-
-.instructionstitle {
-  color: #FF6347;
 }
 
 /* Level Containers */
@@ -78,21 +67,12 @@ p {
   font-size: 0.9em;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  transition: height 0.5s ease, box-shadow 0.5s ease;
+  cursor: pointer;
 }
 
-.level-container:hover {
-  height: 700px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-}
-
-.level-container p {
-  visibility: hidden;
-}
-
-.level-container:hover p {
-  visibility: visible;
+/* Hide content initially */
+.level-container .content {
+  display: none;
 }
 
 /* Level Specific Colors */
@@ -104,20 +84,15 @@ p {
   background-color: rgba(255, 140, 0, 0.7);
 }
 
-/* Images */
+.wavehard {
+  background-color: rgba(255, 69, 0, 0.7);
+}
+
 .level-image {
   transition: opacity 0.5s ease;
   width: 60%;
   margin: 0 auto;
   display: block;
   object-fit: contain;
-}
-/* Hard Level */
-.wavehard {
-  background-color: rgba(255, 69, 0, 0.7); /* Dark orange color for Hard level */
-}
-
-#hardlevel {
-  /* Additional unique styles for Hard level can go here */
 }
 
