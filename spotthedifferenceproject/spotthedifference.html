@@ -11,50 +11,38 @@
     <!-- Banner Section -->
     <header class="banner">
         <h1>Spot the Difference Game</h1>
-        <p>Created by [Your Name]</p>
-        <img src="background.png" alt="Game Logo" class="logo">
+        <h2>Hover over each image to reveal differences!</h2>
     </header>
 
-    <!-- Instructions Section -->
-    <section class="instructions">
-        <h2>How to Play</h2>
-        <p>Hover over each image to reveal differences. Try to spot all differences for each level!</p>
-        <ul>
-            <li>Easy: Few differences, large images.</li>
-            <li>Medium: Moderate differences, medium-sized images.</li>
-            <li>Hard: Many differences, smaller images.</li>
-        </ul>
-    </section>
+    <!-- Game Levels -->
+    <section class="game-levels">
+        <!-- Easy Level -->
+        <div class="level">
+            <h3>Easy Level</h3>
+            <div class="images">
+                <img src="lvl1preimage.png" alt="Easy Level - Before" class="game-image before-image">
+                <img src="lvl1image.png" alt="Easy Level - After" class="game-image after-image">
+            </div>
+        </div>
 
-    <!-- Easy Level -->
-    <section class="level easy">
-        <h3>Easy Level</h3>
-        <div class="image-container">
-            <img src="lvl1preimage.png" alt="Easy Level - Before" class="hover-img">
-            <img src="lvl1image.png" alt="Easy Level - After" class="hover-img hidden">
+        <!-- Medium Level -->
+        <div class="level">
+            <h3>Medium Level</h3>
+            <div class="images">
+                <img src="preimagemid.png" alt="Medium Level - Before" class="game-image before-image">
+                <img src="imagemid.png" alt="Medium Level - After" class="game-image after-image">
+            </div>
+        </div>
+
+        <!-- Hard Level -->
+        <div class="level">
+            <h3>Hard Level</h3>
+            <div class="images">
+                <img src="preimagehard.png" alt="Hard Level - Before" class="game-image before-image">
+                <img src="imagehard.png" alt="Hard Level - After" class="game-image after-image">
+            </div>
         </div>
     </section>
-
-    <!-- Medium Level -->
-    <section class="level medium">
-        <h3>Medium Level</h3>
-        <div class="image-container">
-            <img src="preimagemid.png" alt="Medium Level - Before" class="hover-img">
-            <img src="imagemid.png" alt="Medium Level - After" class="hover-img hidden">
-        </div>
-    </section>
-
-    <!-- Hard Level -->
-    <section class="level hard">
-        <h3>Hard Level</h3>
-        <div class="image-container">
-            <img src="preimagehard.pngimagehard.png" alt="Hard Level - Before" class="hover-img">
-            <img src="imagehard.png.jpg" alt="Hard Level - After" class="hover-img hidden">
-        </div>
-    </section>
-
-    <!-- Add your JavaScript for hover effects if needed -->
-    <script src="script.js"></script>
 
 </body>
 </html>

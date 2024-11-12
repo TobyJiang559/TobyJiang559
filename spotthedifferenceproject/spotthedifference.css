@@ -8,12 +8,11 @@
 body, html {
     height: 100%;
     font-family: Arial, sans-serif;
-    background-color: #1c1c1c; /* Dark theme for "Ghost School" */
+    background-color: #1c1c1c; /* Dark theme */
     color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
     padding: 20px;
 }
 
@@ -29,14 +28,9 @@ body, html {
 }
 
 .banner h2 {
-    font-size: 1.5em;
-    color: #dcdcdc;
-}
-
-.instructions {
     font-size: 1.2em;
+    color: #dcdcdc;
     margin-top: 10px;
-    color: #cccccc;
 }
 
 /* Game levels styling */
@@ -50,7 +44,7 @@ body, html {
 
 /* Level styling */
 .level {
-    background-color: #333333; /* Dark container for each level */
+    background-color: #333333; /* Dark container */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -61,12 +55,6 @@ body, html {
     font-size: 1.8em;
     color: #e0e0e0;
     margin-bottom: 10px;
-}
-
-.level p {
-    font-size: 1em;
-    color: #a9a9a9;
-    margin-bottom: 20px;
 }
 
 /* Images styling */
@@ -84,31 +72,27 @@ body, html {
     transition: opacity 0.5s ease;
 }
 
-/* Hide the after-image initially */
-.after-image {
-    opacity: 0;
+.before-image {
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 1;
     transition: opacity 0.5s ease;
 }
 
-/* Keyframe animation for hover effect */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.after-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
-/* Delay the reveal effect for the after-image */
-.before-image:hover + .after-image {
-    animation: fadeIn 1s ease forwards;
+/* Hover effect */
+.images:hover .before-image {
+    opacity: 0;
+}
+
+.images:hover .after-image {
     opacity: 1;
-}
-
-.before-image:hover {
-    opacity: 0; /* Hide the "before" image on hover */
 }
