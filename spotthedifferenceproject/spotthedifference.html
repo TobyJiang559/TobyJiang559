@@ -1,61 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spot the Difference Game</title>
-    <link rel="stylesheet" href="spotthedifference.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Code.org Unit 4 REVIEW</title>
+  <link href="spotthedifference.css" rel="stylesheet" type="text/css" />
+  <link href="myfavicon.png" rel="icon" type="image/png">
 </head>
 <body>
+  <div class="banner">
+    Thomas A. Edison CTE HS
+    <img src="avatar.png" id="logo">
+    <h1>Web Development</h1>
+    
+    <h1>Toby Jiang</h1>
+  </div>
+  <div class="container">
+    <div class="wave" id="l1">
+      Instructions<br><br>
+      <p>Hover over the selected level. Observe the "before" puzzle image for 10 seconds and hover over the image to reveal the "after" image. Point out all the differences between the two images.</p>
+    </div>
 
-    <!-- Banner Section -->
-    <header class="banner">
-        <h1>Spot the Difference Game</h1>
-        <p>Created by [Your Name]</p>
-    </header>
+    <!-- Easy Level -->
+    <div class="wave" id="easy">
+      <h3>SP0T THE DIFFERENCE! EASY LEVEL</h3>
+      <img src="lvl1preimage.png" width="500"
+           onmouseover="this.src='lvl1image.png';"
+           onmouseout="this.src='lvl1preimage.png';">
+      <hr>
+    </div>
 
-    <!-- Instructions Section -->
-    <section class="instructions">
-        <h2>How to Play</h2>
-        <p>Hover over each image to reveal differences. Try to spot all differences for each level!</p>
-        <ul>
-            <li>Easy: Few differences, large images.</li>
-            <li>Medium: Moderate differences, medium-sized images.</li>
-            <li>Hard: Many differences, smaller images.</li>
-        </ul>
-    </section>
+    <!-- Medium Level -->
+    <div class="wave" id="medium">
+      <h3>SP0T THE DIFFERENCE! MEDIUM LEVEL</h3>
+      <img src="preimagemid.png" width="500"
+           onmouseover="this.src='imagemid.png';"
+           onmouseout="this.src='preimagemid.png';">
+    </div>
 
-    <!-- Game Levels -->
-    <section class="game-levels">
-
-        <!-- Easy Level -->
-        <section class="level easy">
-            <h3>Easy Level</h3>
-            <div class="image-container">
-                <img src="lvl1preimage.png" alt="Easy Level - Before" class="before-image">
-                <img src="lvl1image.png" alt="Easy Level - After" class="after-image">
-            </div>
-        </section>
-
-        <!-- Medium Level -->
-        <section class="level medium">
-            <h3>Medium Level</h3>
-            <div class="image-container">
-                <img src="preimagemid.png" alt="Medium Level - Before" class="before-image">
-                <img src="imagemid.png" alt="Medium Level - After" class="after-image">
-            </div>
-        </section>
-
-        <!-- Hard Level -->
-        <section class="level hard">
-            <h3>Hard Level</h3>
-            <div class="image-container">
-                <img src="preimagehard.png" alt="Hard Level - Before" class="before-image">
-                <img src="imagehard.png" alt="Hard Level - After" class="after-image">
-            </div>
-        </section>
-
-    </section>
-
+    <!-- Hard Level -->
+    <div class="wave" id="hard">
+      <h3>SP0T THE DIFFERENCE! HARD LEVEL</h3>
+      <img src="preimagehard.png" width="500"
+           onmouseover="this.src='imagehard.png';"
+           onmouseout="this.src='preimagehard.png';">
+    </div>
+  </div>
 </body>
 </html>
+
