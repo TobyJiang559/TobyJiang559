@@ -25,9 +25,12 @@
         
         <!-- Easy Level -->
         <div class="level easy-level">
-            <h3 onclick="showLevel('easy-content')">Easy Level</h3>
-            <p>Tip: Look carefully at the background and colors!</p>
-            <div id="easy-content" class="level-content">
+            <input type="radio" id="easy" name="level" class="level-toggle">
+            <label for="easy">
+                <h3>Easy Level</h3>
+                <p>Tip: Look carefully at the background and colors!</p>
+            </label>
+            <div class="level-content">
                 <div class="images">
                     <img src="lvl1preimage.png" alt="Easy Level - Before" class="game-image before-image">
                     <img src="lvl1image.png" alt="Easy Level - After" class="game-image after-image">
@@ -37,9 +40,12 @@
 
         <!-- Medium Level -->
         <div class="level medium-level">
-            <h3 onclick="showLevel('medium-content')">Medium Level</h3>
-            <p>Tip: Focus on small objects and details.</p>
-            <div id="medium-content" class="level-content">
+            <input type="radio" id="medium" name="level" class="level-toggle">
+            <label for="medium">
+                <h3>Medium Level</h3>
+                <p>Tip: Focus on small objects and details.</p>
+            </label>
+            <div class="level-content">
                 <div class="images">
                     <img src="preimagemid.png" alt="Medium Level - Before" class="game-image before-image">
                     <img src="imagemid.png" alt="Medium Level - After" class="game-image after-image">
@@ -49,9 +55,12 @@
 
         <!-- Hard Level -->
         <div class="level hard-level">
-            <h3 onclick="showLevel('hard-content')">Hard Level</h3>
-            <p>Tip: Pay close attention to the smallest differences!</p>
-            <div id="hard-content" class="level-content">
+            <input type="radio" id="hard" name="level" class="level-toggle">
+            <label for="hard">
+                <h3>Hard Level</h3>
+                <p>Tip: Pay close attention to the smallest differences!</p>
+            </label>
+            <div class="level-content">
                 <div class="images">
                     <img src="preimagehard.png" alt="Hard Level - Before" class="game-image before-image">
                     <img src="imagehard.png" alt="Hard Level - After" class="game-image after-image">
@@ -60,14 +69,6 @@
         </div>
 
     </section>
-
-    <!-- JavaScript to Show Levels Once -->
-    <script>
-        function showLevel(levelId) {
-            const levelContent = document.getElementById(levelId);
-            levelContent.style.display = "block"; // Set to display block without toggling back
-        }
-    </script>
 
 </body>
 </html>

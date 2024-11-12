@@ -78,10 +78,20 @@ body, html {
     color: #bbbbbb;
 }
 
+/* Hide input radio buttons */
+.level-toggle {
+    display: none;
+}
+
 /* Level Content Styling */
 .level-content {
-    display: none; /* Initially hidden */
+    display: none;
     margin-top: 20px;
+}
+
+/* Show level content when input is checked */
+.level-toggle:checked + label + .level-content {
+    display: block;
 }
 
 /* Image Container Styling */
