@@ -25,7 +25,7 @@
         
         <!-- Easy Level -->
         <div class="level easy-level">
-            <h3 onclick="toggleLevel('easy-content')">Easy Level</h3>
+            <h3 onclick="showLevel('easy-content')">Easy Level</h3>
             <p>Tip: Look carefully at the background and colors!</p>
             <div id="easy-content" class="level-content">
                 <div class="images">
@@ -37,7 +37,7 @@
 
         <!-- Medium Level -->
         <div class="level medium-level">
-            <h3 onclick="toggleLevel('medium-content')">Medium Level</h3>
+            <h3 onclick="showLevel('medium-content')">Medium Level</h3>
             <p>Tip: Focus on small objects and details.</p>
             <div id="medium-content" class="level-content">
                 <div class="images">
@@ -49,7 +49,7 @@
 
         <!-- Hard Level -->
         <div class="level hard-level">
-            <h3 onclick="toggleLevel('hard-content')">Hard Level</h3>
+            <h3 onclick="showLevel('hard-content')">Hard Level</h3>
             <p>Tip: Pay close attention to the smallest differences!</p>
             <div id="hard-content" class="level-content">
                 <div class="images">
@@ -61,11 +61,11 @@
 
     </section>
 
-    <!-- JavaScript to Toggle Levels -->
+    <!-- JavaScript to Show Levels Once -->
     <script>
-        function toggleLevel(levelId) {
+        function showLevel(levelId) {
             const levelContent = document.getElementById(levelId);
-            levelContent.style.display = (levelContent.style.display === "block") ? "none" : "block";
+            levelContent.style.display = "block"; // Set to display block without toggling back
         }
     </script>
 
