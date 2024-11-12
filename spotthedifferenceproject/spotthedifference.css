@@ -1,4 +1,4 @@
-/* Basic reset */
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +6,8 @@
 }
 
 body, html {
-    height: 100%;
     font-family: Arial, sans-serif;
-    background-color: #1c1c1c; /* Dark theme */
+    background-color: #1c1c1c;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -16,39 +15,55 @@ body, html {
     padding: 20px;
 }
 
-/* Main banner styling */
+/* Main Banner Styling */
 .banner {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .banner h1 {
     font-size: 2.5em;
-    color: #f0e68c; /* Ghostly gold */
+    color: #f0e68c; /* Gold */
+    margin-bottom: 5px;
 }
 
-.banner h2 {
+.banner h3 {
     font-size: 1.2em;
     color: #dcdcdc;
-    margin-top: 10px;
 }
 
-/* Game levels styling */
+/* Instructions Section */
+.instructions {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.instructions h2 {
+    font-size: 1.8em;
+    color: #f0e68c;
+}
+
+.instructions p {
+    font-size: 1em;
+    color: #cccccc;
+}
+
+/* Game Levels Styling */
 .game-levels {
     width: 100%;
-    max-width: 900px;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-/* Level styling */
+/* Level Styling */
 .level {
     background-color: #333333;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .level h3 {
@@ -57,51 +72,25 @@ body, html {
     margin-bottom: 10px;
 }
 
-/* Hide checkbox input */
-.toggle-checkbox {
-    display: none;
+.level p {
+    font-size: 1em;
+    color: #bbbbbb;
+    margin-bottom: 20px;
 }
 
-/* Label styling for toggle */
-.toggle-label {
-    display: block;
-    cursor: pointer;
-    padding: 10px;
-    background-color: #444444;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.toggle-label:hover {
-    background-color: #555555;
-}
-
-/* Level content styling */
-.level-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease;
-    padding-top: 0;
-}
-
-/* Show content when checkbox is checked */
-.toggle-checkbox:checked + .toggle-label + .level-content {
-    max-height: 500px; /* Set enough height to reveal the content */
-    padding-top: 20px;
-}
-
-/* Images styling */
+/* Image Container Styling */
 .images {
     position: relative;
     width: 80%;
     max-width: 600px;
     margin: 0 auto;
+    overflow: hidden;
+    border: 3px solid #666666;
+    border-radius: 8px;
 }
 
 .game-image {
     width: 100%;
-    border: 3px solid #666666;
-    border-radius: 8px;
     transition: opacity 0.5s ease;
 }
 
@@ -121,11 +110,24 @@ body, html {
     transition: opacity 0.5s ease;
 }
 
-/* Hover effect */
+/* Hover Effect to Show After Image */
 .images:hover .before-image {
     opacity: 0;
 }
 
 .images:hover .after-image {
     opacity: 1;
+}
+
+/* Level-specific Styling */
+.easy-level {
+    border: 2px solid #90ee90; /* Light green for Easy */
+}
+
+.medium-level {
+    border: 2px solid #ffa07a; /* Light salmon for Medium */
+}
+
+.hard-level {
+    border: 2px solid #ff4500; /* Orange red for Hard */
 }

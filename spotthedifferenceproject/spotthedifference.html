@@ -8,49 +8,51 @@
 </head>
 <body>
 
-    <!-- Banner Section -->
+    <!-- Main Banner -->
     <header class="banner">
         <h1>Spot the Difference Game</h1>
-        <h2>Click on each level to reveal the game</h2>
+        <h3>Created by [Your Name]</h3>
     </header>
+
+    <!-- Instructions -->
+    <section class="instructions">
+        <h2>How to Play</h2>
+        <p>Hover over each image to reveal the differences. Spot all the differences for each level to complete the challenge!</p>
+    </section>
 
     <!-- Game Levels -->
     <section class="game-levels">
+        
         <!-- Easy Level -->
-        <div class="level">
-            <input type="checkbox" id="easy-toggle" class="toggle-checkbox">
-            <label for="easy-toggle" class="toggle-label"><h3>Easy Level</h3></label>
-            <div class="level-content">
-                <div class="images">
-                    <img src="lvl1preimage.png" alt="Easy Level - Before" class="game-image before-image">
-                    <img src="lvl1image.png" alt="Easy Level - After" class="game-image after-image">
-                </div>
+        <div class="level easy-level">
+            <h3>Easy Level</h3>
+            <p>Tip: Look carefully at the background and colors!</p>
+            <div class="images">
+                <img src="lvl1preimage.png" alt="Easy Level - Before" class="game-image before-image">
+                <img src="lvl1image.png" alt="Easy Level - After" class="game-image after-image">
             </div>
         </div>
 
         <!-- Medium Level -->
-        <div class="level">
-            <input type="checkbox" id="medium-toggle" class="toggle-checkbox">
-            <label for="medium-toggle" class="toggle-label"><h3>Medium Level</h3></label>
-            <div class="level-content">
-                <div class="images">
-                    <img src="preimagemid.png" alt="Medium Level - Before" class="game-image before-image">
-                    <img src="imagemid.png" alt="Medium Level - After" class="game-image after-image">
-                </div>
+        <div class="level medium-level">
+            <h3>Medium Level</h3>
+            <p>Tip: Focus on small objects and details.</p>
+            <div class="images">
+                <img src="preimagemid.png" alt="Medium Level - Before" class="game-image before-image">
+                <img src="imagemid.png" alt="Medium Level - After" class="game-image after-image">
             </div>
         </div>
 
         <!-- Hard Level -->
-        <div class="level">
-            <input type="checkbox" id="hard-toggle" class="toggle-checkbox">
-            <label for="hard-toggle" class="toggle-label"><h3>Hard Level</h3></label>
-            <div class="level-content">
-                <div class="images">
-                    <img src="preimagehard.png" alt="Hard Level - Before" class="game-image before-image">
-                    <img src="imagehard.png" alt="Hard Level - After" class="game-image after-image">
-                </div>
+        <div class="level hard-level">
+            <h3>Hard Level</h3>
+            <p>Tip: Pay close attention to the smallest differences!</p>
+            <div class="images">
+                <img src="preimagehard.png" alt="Hard Level - Before" class="game-image before-image">
+                <img src="imagehard.png" alt="Hard Level - After" class="game-image after-image">
             </div>
         </div>
+
     </section>
 
 </body>
