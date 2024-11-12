@@ -1,29 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Code.org Unit 4 REVIEW</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code.org Unit 4 Review - Spot the Difference</title>
   <link href="spotthedifference.css" rel="stylesheet" type="text/css" />
   <link href="myfavicon.png" rel="icon" type="image/png">
 </head>
 <body>
   <div class="banner">
-    Thomas A. Edison CTE HS
-    <img src="avatar.png" id="logo">
-    <h1>Web Development</h1>
-    
-    <h1>Toby Jiang</h1>
+    <div class="banner-content">
+      <h2>Toby Jiang</h2>
+    </div>
   </div>
+
   <div class="container">
-    <div class="wave" id="l1">
-      Instructions<br><br>
-      <p>Hover over the selected level. Observe the "before" puzzle image for 10 seconds and hover over the image to reveal the "after" image. Point out all the differences between the two images.</p>
+    <div class="instructions">
+      <h2>How to Play:</h2>
+      <p>hover over the three levels (try your best!) after 10 seconds hover over the images then decide which three objects changed! </p>
     </div>
 
     <!-- Easy Level -->
     <div class="wave" id="easy">
-      <h3>SP0T THE DIFFERENCE! EASY LEVEL</h3>
+      <h3>Easy Level: Spot the Difference</h3>
       <img src="lvl1preimage.png" width="500"
            onmouseover="this.src='lvl1image.png';"
            onmouseout="this.src='lvl1preimage.png';">
@@ -32,15 +31,16 @@
 
     <!-- Medium Level -->
     <div class="wave" id="medium">
-      <h3>SP0T THE DIFFERENCE! MEDIUM LEVEL</h3>
+      <h3>Medium Level: Spot the Difference</h3>
       <img src="preimagemid.png" width="500"
            onmouseover="this.src='imagemid.png';"
            onmouseout="this.src='preimagemid.png';">
+      <hr>
     </div>
 
     <!-- Hard Level -->
     <div class="wave" id="hard">
-      <h3>SP0T THE DIFFERENCE! HARD LEVEL</h3>
+      <h3>Hard Level: Spot the Difference</h3>
       <img src="preimagehard.png" width="500"
            onmouseover="this.src='imagehard.png';"
            onmouseout="this.src='preimagehard.png';">
@@ -48,4 +48,3 @@
   </div>
 </body>
 </html>
-
