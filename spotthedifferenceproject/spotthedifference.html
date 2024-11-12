@@ -4,71 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spot the Difference Game</title>
-    <link rel="stylesheet" href="spotthedifference.css">
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #1e90ff;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            color: #1e90ff;
+            margin: 15px 0 10px;
+        }
+
+        p.instructions {
+            font-size: 1em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .levels {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .level {
+            width: 30%;
+            margin: 10px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .level:hover {
+            transform: scale(1.05);
+        }
+
+        .level h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .level p {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.5s;
+        }
+
+        /* Hover effects for showing differences */
+        .image-container img.after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+
+        .image-container:hover img.after {
+            opacity: 1;
+        }
+
+        .image-container:hover img.before {
+            opacity: 0;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Main Banner -->
-    <header class="banner">
+    <!-- Game Banner -->
+    <header>
         <h1>Spot the Difference Game</h1>
-        <h3>Created by [Your Name]</h3>
+        <p>Created by Your Name</p>
     </header>
 
     <!-- Instructions -->
-    <section class="instructions">
-        <h2>How to Play</h2>
-        <p>Click on each level to reveal the images. Then, hover over the image to see the differences.</p>
-    </section>
+    <p class="instructions">
+        Welcome to Spot the Difference! Hover over each image to reveal the differences. Spot all the differences between the images in each level. Good luck!
+    </p>
 
     <!-- Game Levels -->
-    <section class="game-levels">
-        
+    <div class="levels">
+
         <!-- Easy Level -->
-        <div class="level easy-level">
-            <input type="radio" id="easy" name="level" class="level-toggle">
-            <label for="easy">
-                <h3>Easy Level</h3>
-                <p>Tip: Look carefully at the background and colors!</p>
-            </label>
-            <div class="level-content">
-                <div class="images">
-                    <img src="lvl1preimage.png" alt="Easy Level - Before" class="game-image before-image">
-                    <img src="lvl1image.png" alt="Easy Level - After" class="game-image after-image">
-                </div>
+        <div class="level">
+            <h2>Level 1: Easy</h2>
+            <p>Find a few simple differences in this image. Take your time and look closely!</p>
+            <div class="image-container">
+                <img src="lvl1preimage.png" alt="Easy Level Before" class="before">
+                <img src="lvl1image.png" alt="Easy Level After" class="after">
             </div>
         </div>
 
         <!-- Medium Level -->
-        <div class="level medium-level">
-            <input type="radio" id="medium" name="level" class="level-toggle">
-            <label for="medium">
-                <h3>Medium Level</h3>
-                <p>Tip: Focus on small objects and details.</p>
-            </label>
-            <div class="level-content">
-                <div class="images">
-                    <img src="preimagemid.png" alt="Medium Level - Before" class="game-image before-image">
-                    <img src="imagemid.png" alt="Medium Level - After" class="game-image after-image">
-                </div>
+        <div class="level">
+            <h2>Level 2: Medium</h2>
+            <p>This one is a bit trickier. Pay attention to smaller details!</p>
+            <div class="image-container">
+                <img src="preimagemid.png" alt="Medium Level Before" class="before">
+                <img src="imagemid.png" alt="Medium Level After" class="after">
             </div>
         </div>
 
         <!-- Hard Level -->
-        <div class="level hard-level">
-            <input type="radio" id="hard" name="level" class="level-toggle">
-            <label for="hard">
-                <h3>Hard Level</h3>
-                <p>Tip: Pay close attention to the smallest differences!</p>
-            </label>
-            <div class="level-content">
-                <div class="images">
-                    <img src="preimagehard.png" alt="Hard Level - Before" class="game-image before-image">
-                    <img src="imagehard.png" alt="Hard Level - After" class="game-image after-image">
-                </div>
+        <div class="level">
+            <h2>Level 3: Hard</h2>
+            <p>Only for experts! Find all the hidden differences in this challenging image.</p>
+            <div class="image-container">
+                <img src="preimagehard.png" alt="Hard Level Before" class="before">
+                <img src="imagehard.png" alt="Hard Level After" class="after">
             </div>
         </div>
 
-    </section>
+    </div>
 
 </body>
 </html>
