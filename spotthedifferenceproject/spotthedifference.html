@@ -17,7 +17,7 @@
     <!-- Instructions -->
     <section class="instructions">
         <h2>How to Play</h2>
-        <p>Hover over each image to reveal the differences. Spot all the differences for each level to complete the challenge!</p>
+        <p>Click on each level to reveal the images. Then, hover over the image to see the differences.</p>
     </section>
 
     <!-- Game Levels -->
@@ -25,35 +25,49 @@
         
         <!-- Easy Level -->
         <div class="level easy-level">
-            <h3>Easy Level</h3>
+            <h3 onclick="toggleLevel('easy-content')">Easy Level</h3>
             <p>Tip: Look carefully at the background and colors!</p>
-            <div class="images">
-                <img src="lvl1preimage.png" alt="Easy Level - Before" class="game-image before-image">
-                <img src="lvl1image.png" alt="Easy Level - After" class="game-image after-image">
+            <div id="easy-content" class="level-content">
+                <div class="images">
+                    <img src="lvl1preimage.png" alt="Easy Level - Before" class="game-image before-image">
+                    <img src="lvl1image.png" alt="Easy Level - After" class="game-image after-image">
+                </div>
             </div>
         </div>
 
         <!-- Medium Level -->
         <div class="level medium-level">
-            <h3>Medium Level</h3>
+            <h3 onclick="toggleLevel('medium-content')">Medium Level</h3>
             <p>Tip: Focus on small objects and details.</p>
-            <div class="images">
-                <img src="preimagemid.png" alt="Medium Level - Before" class="game-image before-image">
-                <img src="imagemid.png" alt="Medium Level - After" class="game-image after-image">
+            <div id="medium-content" class="level-content">
+                <div class="images">
+                    <img src="preimagemid.png" alt="Medium Level - Before" class="game-image before-image">
+                    <img src="imagemid.png" alt="Medium Level - After" class="game-image after-image">
+                </div>
             </div>
         </div>
 
         <!-- Hard Level -->
         <div class="level hard-level">
-            <h3>Hard Level</h3>
+            <h3 onclick="toggleLevel('hard-content')">Hard Level</h3>
             <p>Tip: Pay close attention to the smallest differences!</p>
-            <div class="images">
-                <img src="preimagehard.png" alt="Hard Level - Before" class="game-image before-image">
-                <img src="imagehard.png" alt="Hard Level - After" class="game-image after-image">
+            <div id="hard-content" class="level-content">
+                <div class="images">
+                    <img src="preimagehard.png" alt="Hard Level - Before" class="game-image before-image">
+                    <img src="imagehard.png" alt="Hard Level - After" class="game-image after-image">
+                </div>
             </div>
         </div>
 
     </section>
+
+    <!-- JavaScript to Toggle Levels -->
+    <script>
+        function toggleLevel(levelId) {
+            const levelContent = document.getElementById(levelId);
+            levelContent.style.display = (levelContent.style.display === "block") ? "none" : "block";
+        }
+    </script>
 
 </body>
 </html>

@@ -23,7 +23,7 @@ body, html {
 
 .banner h1 {
     font-size: 2.5em;
-    color: #f0e68c; /* Gold */
+    color: #f0e68c;
     margin-bottom: 5px;
 }
 
@@ -64,6 +64,7 @@ body, html {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 .level h3 {
@@ -75,13 +76,18 @@ body, html {
 .level p {
     font-size: 1em;
     color: #bbbbbb;
-    margin-bottom: 20px;
+}
+
+/* Level Content Styling */
+.level-content {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
 }
 
 /* Image Container Styling */
 .images {
     position: relative;
-    width: 80%;
+    width: 100%;
     max-width: 600px;
     margin: 0 auto;
     overflow: hidden;
@@ -121,13 +127,13 @@ body, html {
 
 /* Level-specific Styling */
 .easy-level {
-    border: 2px solid #90ee90; /* Light green for Easy */
+    border: 2px solid #90ee90;
 }
 
 .medium-level {
-    border: 2px solid #ffa07a; /* Light salmon for Medium */
+    border: 2px solid #ffa07a;
 }
 
 .hard-level {
-    border: 2px solid #ff4500; /* Orange red for Hard */
+    border: 2px solid #ff4500;
 }
