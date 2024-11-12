@@ -68,11 +68,24 @@ p {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  overflow: hidden;
 }
 
-/* Hide content initially */
 .level-container .content {
-  display: none;
+  text-align: center;
+}
+
+/* Slide Out Animation */
+.level-image.slide-out {
+  width: 0;
+  opacity: 0;
+  transition: width 0.5s ease, opacity 0.5s ease;
+}
+
+/* Hover to show the image */
+.level-container:hover .level-image.slide-out {
+  width: 60%; /* Adjust width as needed */
+  opacity: 1;
 }
 
 /* Level Specific Colors */
@@ -88,11 +101,4 @@ p {
   background-color: rgba(255, 69, 0, 0.7);
 }
 
-.level-image {
-  transition: opacity 0.5s ease;
-  width: 60%;
-  margin: 0 auto;
-  display: block;
-  object-fit: contain;
-}
 
