@@ -112,4 +112,12 @@ p {
   display: block;
   object-fit: contain;
 }
+/* Hard Level */
+.wavehard {
+  background-color: rgba(255, 69, 0, 0.7); /* Dark orange color for Hard level */
+}
+
+#hardlevel {
+  /* Additional unique styles for Hard level can go here */
+}
 
