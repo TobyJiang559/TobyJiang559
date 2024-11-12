@@ -44,17 +44,51 @@ body, html {
 
 /* Level styling */
 .level {
-    background-color: #333333; /* Dark container */
+    background-color: #333333;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 .level h3 {
     font-size: 1.8em;
     color: #e0e0e0;
     margin-bottom: 10px;
+}
+
+/* Hide checkbox input */
+.toggle-checkbox {
+    display: none;
+}
+
+/* Label styling for toggle */
+.toggle-label {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #444444;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-label:hover {
+    background-color: #555555;
+}
+
+/* Level content styling */
+.level-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    padding-top: 0;
+}
+
+/* Show content when checkbox is checked */
+.toggle-checkbox:checked + .toggle-label + .level-content {
+    max-height: 500px; /* Set enough height to reveal the content */
+    padding-top: 20px;
 }
 
 /* Images styling */
