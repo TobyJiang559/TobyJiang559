@@ -11,8 +11,8 @@
   
   <!-- Intro Section -->
   <div class="introtogame">
-    <h1 class="introtogametext">Ladies and Gentlemen, Welcome to Spot the Difference!</h1>
-    <h5>By Safwan Ahmed</h5>
+    <h1 class="introtogametext">SPOT THE DIFFERENCE GAME!!!</h1>
+    <h5>By Toby Jiang</h5>
   </div>
 
   <!-- Instructions -->
@@ -21,7 +21,7 @@
     <p>Use your cursor to hover over the images.</p>
     <p>After you do so, the image will change.</p>
     <p>Your job is to spot the difference using your detective skills!</p>
-    <p>There are two levels: Easy and Medium.</p>
+    <p>There are three levels: Easy, Medium, and Hard.</p>
   </div>
 
   <!-- Easy Level -->
@@ -40,6 +40,15 @@
     <img class="level-image" src="preimagemid.png" 
          onmouseover="this.src='imagemid.png';"
          onmouseout="this.src='preimagemid.png';" alt="Medium Level Image">
+  </div>
+
+  <!-- Hard Level -->
+  <div class="level-container wavehard" id="hardlevel">
+    <h3>Hard</h3>
+    <p>You have 5 seconds to view the images. Remove your mouse from the image once the time is up.</p>
+    <img class="level-image" src="preimagehard.png" 
+         onmouseover="this.src='imagehard.png';"
+         onmouseout="this.src='preimagehard.png';" alt="Hard Level Image">
   </div>
 
 </body>
