@@ -6,12 +6,6 @@
   <link rel="stylesheet" href="spotthedifference.css">
   <link rel="icon" href="background.png" type="image/png"> 
   <title>Spot the Difference</title>
-  <script>
-    function toggleVisibility(levelId) {
-      const levelContent = document.getElementById(levelId).querySelector('.content');
-      levelContent.style.display = levelContent.style.display === 'none' ? 'block' : 'none';
-    }
-  </script>
 </head>
 <body>
   
@@ -31,33 +25,33 @@
   </div>
 
   <!-- Easy Level -->
-  <div class="level-container waveeasy" id="easylevel" onclick="toggleVisibility('easylevel')">
+  <div class="level-container waveeasy" id="easylevel">
     <h3>Easy</h3>
     <div class="content">
       <p>You have 15 seconds to view the images. Remove your mouse from the image once the time is up.</p>
-      <img class="level-image" src="lvl1preimage.png" 
+      <img class="level-image slide-out" src="lvl1preimage.png" 
            onmouseover="this.src='lvl1image.png';" 
            onmouseout="this.src='lvl1preimage.png';" alt="Easy Level Image">
     </div>
   </div>
 
   <!-- Medium Level -->
-  <div class="level-container wavemedium" id="mediumlevel" onclick="toggleVisibility('mediumlevel')">
+  <div class="level-container wavemedium" id="mediumlevel">
     <h3>Medium</h3>
     <div class="content">
       <p>You have 7 seconds to view the images. Remove your mouse from the image once the time is up.</p>
-      <img class="level-image" src="preimagemid.png" 
+      <img class="level-image slide-out" src="preimagemid.png" 
            onmouseover="this.src='imagemid.png';"
            onmouseout="this.src='preimagemid.png';" alt="Medium Level Image">
     </div>
   </div>
 
   <!-- Hard Level -->
-  <div class="level-container wavehard" id="hardlevel" onclick="toggleVisibility('hardlevel')">
+  <div class="level-container wavehard" id="hardlevel">
     <h3>Hard</h3>
     <div class="content">
       <p>You have 5 seconds to view the images. Remove your mouse from the image once the time is up.</p>
-      <img class="level-image" src="preimagehard.png" 
+      <img class="level-image slide-out" src="preimagehard.png" 
            onmouseover="this.src='imagehard.png';"
            onmouseout="this.src='preimagehard.png';" alt="Hard Level Image">
     </div>
@@ -65,3 +59,4 @@
 
 </body>
 </html>
+
