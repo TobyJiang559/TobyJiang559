@@ -1,1 +1,115 @@
+/* General Styles */
+body {
+  background-image: url('background.png');
+  background-size: cover;
+  background-position: center;
+  color: whitesmoke;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h3 {
+  font-weight: bold;
+  text-align: center;
+  color: whitesmoke;
+}
+
+h5 {
+  text-align: center;
+  color: whitesmoke;
+}
+
+p {
+  color: whitesmoke;
+  font-size: 1em;
+}
+
+/* Intro Section */
+.introtogame {
+  border: 2px dotted #FF8C00;
+  margin: 5px auto;
+  padding: 10px;
+  background-color: rgba(255, 140, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  text-align: center;
+}
+
+.introtogametext {
+  font-size: 2.5em;
+  color: #FF6347;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Instructions */
+#instructions {
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #FF8C00;
+  background-color: rgba(255, 165, 0, 0.5);
+  color: whitesmoke;
+  text-align: center;
+  font-size: 0.9em;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: height 0.5s ease, box-shadow 0.5s ease;
+  overflow: hidden;
+}
+
+#instructions:hover {
+  height: auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.instructionstitle {
+  color: #FF6347;
+}
+
+/* Level Containers */
+.level-container {
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #FF8C00;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 0.9em;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: height 0.5s ease, box-shadow 0.5s ease;
+}
+
+.level-container:hover {
+  height: 700px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.level-container p {
+  visibility: hidden;
+}
+
+.level-container:hover p {
+  visibility: visible;
+}
+
+/* Level Specific Colors */
+.waveeasy {
+  background-color: rgba(255, 165, 0, 0.7);
+}
+
+.wavemedium {
+  background-color: rgba(255, 140, 0, 0.7);
+}
+
+/* Images */
+.level-image {
+  transition: opacity 0.5s ease;
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+  object-fit: contain;
+}
 
