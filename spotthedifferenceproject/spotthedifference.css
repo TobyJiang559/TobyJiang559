@@ -1,75 +1,103 @@
+/* Reset default margin and padding */
 html, body {
-    height: 99%;
-    width: 99%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
+/* Universal box-sizing */
 * {
     box-sizing: border-box;
 }
 
+/* Banner style */
 .banner {
     background-image: url("background.png");
     color: #652f2f;
-    margin: 15px;
-    padding: 10px;
-    border: 3px solid #1f2393;
+    padding: 15px;
+    text-align: center;
+    font-family: 'fantasy';
     box-shadow: 1px 3px 30px 1px #6565ae;
-    text-transform: capitalize;
-    text-shadow: 1px 1px #5f70bf;
-    font-family: fantasy;
-    height: 120px;
-    text-align: right;
-    font-style: oblique;
+    border: 3px solid #1f2393;
 }
 
-h1 {
-    font-size: 0.7em;
+.banner-content {
+    position: relative;
 }
 
 #logo {
     width: 100px;
     position: absolute;
     top: 30px;
-    right: 1390px;
+    right: 20px;
 }
 
+h1 {
+    font-size: 1.5em;
+    text-transform: capitalize;
+    text-shadow: 1px 1px #5f70bf;
+    font-style: oblique;
+}
+
+h2 {
+    font-size: 1em;
+    color: #1f2393;
+}
+
+/* Main container for content */
 .container {
-    border: 2px #1f2393 solid;
-    position: relative;
-    top: 2px;
-    margin: 15px;
-    padding: 10px;
-    height: 700px;
-    overflow: hidden;
+    border: 2px solid #1f2393;
+    padding: 20px;
     background-image: url("background.png");
+    margin: 20px;
+    height: 700px;
+    overflow: auto;
 }
 
-.wave {
-    border: #fcfcfc 1px solid;
-    color: #ffffff;
-    text-align: center;
+/* Instructions section */
+.instructions {
     background-color: rgba(38, 56, 109, 0.9);
-    font-size: 0.9em;
-    height: 40px;
-    overflow: hidden;
-    width: 80%;
-    position: relative;
-    left: 10%;
-    transition: height 4s;
-    display: block;
+    padding: 15px;
+    border: 1px solid #ffffff;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 1em;
+    text-align: center;
 }
 
-#l1 {
-    border: #d7d6d6 1px solid;
-    background-image: repeating-linear-gradient(#26386d, #26386d);
+h2 {
+    margin-bottom: 10px;
 }
 
-.wave:hover {
-    height: 90%;
-    top: 1px;
-    z-index: 1;
+/* Wave section for each level */
+.wave {
+    background-color: rgba(38, 56, 109, 0.9);
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1em;
 }
 
 h3 {
-    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #fcfcfc;
+}
+
+/* Image hover effect */
+.wave img {
+    transition: all 0.3s ease;
+}
+
+.wave img:hover {
+    transform: scale(1.05);
+}
+
+/* Hover effects for wave sections */
+.wave:hover {
+    height: 100%;
+    transition: height 0.5s ease-in-out;
 }
